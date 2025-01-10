@@ -9,7 +9,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 // import { NavigationBarComponent } from './shared-components/navigation-bar/navigation-bar.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TextChangeDirective } from './directives/textchange.directives.';
 import { SharedModule } from './shared/shared.module';
 import { RouterModule } from '@angular/router';
@@ -31,6 +31,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    FormsModule,
     SharedModule , // Importing SharedModule here makes NavigationBarComponent available in HomeComponent
     RouterModule
   ],

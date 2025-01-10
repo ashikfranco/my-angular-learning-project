@@ -1,0 +1,26 @@
+<p>angular-form works!</p>
+
+<h2>angular dynamic form with formgroup with a response data</h2>
+
+<div class="container">
+    <form [formGroup]="dynamicForm" (ngSubmit)="onSubmit()">
+       
+        <div *ngFor="let field of fields">
+
+            <div class="row">
+                <div class="col-6"><label>{{ field.label }}</label></div>
+                <div class="col-6">  <input 
+                    [formControlName]="field.name" 
+                    [type]="field.type" 
+                    placeholder="{{ field.label }}" 
+                  /></div>
+            </div>
+          
+        
+        </div>
+        
+        <button type="submit">Submit</button>
+      </form>
+</div>
+
+<hr>

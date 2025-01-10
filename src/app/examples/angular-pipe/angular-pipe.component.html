@@ -1,0 +1,64 @@
+<p>angular-pipe works!</p>
+
+<h1> pure pipe</h1>
+
+<div> <h2>code of a pure pipe in Angular</h2> <img [src]="imageUrl" alt="pure pipe"> </div>
+
+<h3>example for pure pipe</h3>
+
+<h1>{{test | uppercasePure}}</h1>
+
+<p>Pure pipes are the default type of pipes in Angular. 
+    They are executed only when the input value changes. 
+    This means that if the same input is provided multiple times without any modification, the pipe will not re-execute, leading to improved performance.</p>
+
+<p>impure pipe example</p>  
+   
+
+   <h1> impure pipe</h1>
+
+<div> <h2>code of a pure pipe in Angular</h2> <img [src]="imageUrl1" alt="impure pipe"> </div>
+
+<h3>example</h3>
+<div>
+     <input [(ngModel)]="searchText" placeholder="Search name">
+      <ul> 
+        <li *ngFor="let item of items | impurepipefilter: searchText">{{ item.name }}</li> 
+    </ul> 
+</div>
+
+<hr>
+
+<h1>example for method decorator>>  hostlistener</h1>
+<div>
+    <app-listener></app-listener>
+</div>
+
+<hr>
+<div class="container">
+    <h3 class="text-center">Async pipe Example</h3>
+  
+    {{delayResponse | async}}      
+    
+  <br>
+     this " some  text"  show above is due to  async pipe used in html , it auto subscribe the observable and emit value
+  <br>
+  this " some  text"  show below  is due to subscribe the observable
+    <h5>{{responseText}}</h5>
+    </div>
+
+
+    <br>
+    <hr>
+
+    <h3>example for a custom angular pipe to update the text in html</h3>
+
+    <div class="container">
+        <ul *ngFor="let item of namelist">
+            <li>
+                <p>{{item | addHashPrefix}}</p>
+            </li>
+           
+        </ul>
+    </div>
+

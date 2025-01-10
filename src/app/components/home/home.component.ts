@@ -36,20 +36,38 @@ export class HomeComponent implements OnInit {
        route:'exampless/basicsss'
   },
   {
-      concept: 'Data Binding',
-      description: 'Two-way data binding in Angular',
+      concept: 'angular pipes and features',
+      description: 'angular pipes and features',
       example: 'Using ngModel',
-      route:'exampless/basicsssssssss'
+      route:'exampless/angular-pipes'
   },
   {
-      concept: 'Directives',
+      concept: 'OPEN AI iNTERGRATION',
       description: 'Built-in directives in Angular',
       example: 'Using ngFor and ngIf',
-       route:'exampless/basicsssssssssssss'
-  }
+       route:'exampless/open-ai'
+  },
+  {
+    concept: 'Angular Forms',
+    description: 'different types of angular form',
+    example: 'click me',
+     route:'exampless/angular-forms'
+    },
+    {
+      concept: 'Angular render, create elements',
+      description: 'rendering and create element',
+      example: 'click me',
+       route:'exampless/angular-render-element'
+      },
+      {
+        concept: 'Angular confetti',
+        description: 'animation of congrats',
+        example: 'click me',
+         route:'exampless/confetti'
+        }
+    
 ];
-  delayResponse: Observable<string> | undefined;  // can also give like  delayResponse : any
-  responseText: any;
+ 
  
 
 constructor(private router: Router,
@@ -72,10 +90,7 @@ const array = ["hello123", "test456 and 123", "number789", "another123456", "123
 this.countNumberOccurrences(array);
 
       
-    this.delayResponse = of('Some text').pipe(delay(1000));
-    this.delayResponse.subscribe((data:any) => {
-      this.responseText = data; // Create a new property to hold the emitted value
-    });
+  
   }
 
 

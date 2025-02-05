@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { openAiService } from 'src/app/shared/services/openai.service';
+// import { openAiService } from 'src/app/shared/services/openai.service';
 
 @Component({
   selector: 'app-openai',
@@ -9,11 +9,14 @@ import { openAiService } from 'src/app/shared/services/openai.service';
 export class OpenaiComponent {
 
   completion: string = '';
-  constructor(private openAiService : openAiService){
+  constructor(
+    // private openAiService : openAiService
+  ){
     alert("hello");
   }
 
   onGenerate() { 
-    this.openAiService.getCompletion('Write a short story about a dragon').then(text => { this.completion = text; }); }
+    // this.openAiService.getCompletion('Write a short story about a dragon').then(text => { this.completion = text; }); 
+  }
 
 }

@@ -12,6 +12,10 @@ import { AngularPipeComponent } from './angular-pipe/angular-pipe.component';
 import { AngularFormComponent } from './angular-form/angular-form.component';
 import { RenderElementComponent } from '../render-element/render-element.component';
 import { JsConfettiComponent } from '../js-confetti/js-confetti.component';
+import { CkeditorComponent } from './ckeditor/ckeditor.component';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+
+
 
 
 
@@ -25,12 +29,15 @@ import { JsConfettiComponent } from '../js-confetti/js-confetti.component';
     AngularPipeComponent,
     AngularFormComponent,
     RenderElementComponent,
-    JsConfettiComponent
+    JsConfettiComponent,
+    CkeditorComponent
   ],
   imports: [
     CommonModule,
     ExamplesRoutingModule,
     SharedModule,
+    CKEditorModule
+
   ]
 })
 export class ExamplesModule { }

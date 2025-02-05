@@ -64,7 +64,13 @@ export class HomeComponent implements OnInit {
         description: 'animation of congrats',
         example: 'click me',
          route:'exampless/confetti'
-        }
+        },
+        {
+          concept: 'Angular ckeditor',
+          description: 'text editor for angular',
+          example: 'click me',
+           route:'exampless/ckeditor'
+          }
     
 ];
  

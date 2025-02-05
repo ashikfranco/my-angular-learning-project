@@ -1,0 +1,35 @@
+<p>ckeditor works!</p>
+
+<h2>how to install ck editor using npm>>  npm i ckeditor5</h2>
+<h3>also install >>>   npm i @ckeditor/ckeditor5-build-classic</h3>
+
+<h2>older version for angular , less than angular 15 >>  npm install @ckeditor/ckeditor5-angular@4 --save</h2>
+
+
+
+
+<h2>CKEditor 5 Implementation</h2>
+
+<div>
+    <code>
+      <p>npm install @ckeditor/ckeditor5-angular@6.0.0</p>  
+
+      <p>dependencies: </p><p> @ckeditor/ckeditor5-build-classic@39.0.0</p>
+
+      <p>import module in app module</p> <p>import  CKEditorModule  from '@ckeditor/ckeditor5-angular';</p>
+      <p>also in import array of appmodule</p>
+
+
+    </code>
+</div>
+<ckeditor
+  [editor]="Editor"
+  [config]="editorConfig"
+  [(ngModel)]="editorData"
+  (ready)="onReady($event)"
+  (change)="onChange($event)"
+  (blur)="onBlur($event)"
+  (focus)="onFocus($event)">
+</ckeditor>
+
+

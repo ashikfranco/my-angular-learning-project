@@ -70,7 +70,13 @@ export class HomeComponent implements OnInit {
           description: 'text editor for angular',
           example: 'click me',
            route:'exampless/ckeditor'
-          }
+          },
+          {
+            concept: 'Tailwind learning Page',
+            description: 'Tailwind learning Page',
+            example: 'click me  for tailwind learning',
+             route:'exampless/tailwind'
+            }
     
 ];
  

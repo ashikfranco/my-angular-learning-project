@@ -10,6 +10,7 @@ import { AngularFormComponent } from './angular-form/angular-form.component';
 import { RenderElementComponent } from '../render-element/render-element.component';
 import { JsConfettiComponent } from '../js-confetti/js-confetti.component';
 import { CkeditorComponent } from '../examples/ckeditor/ckeditor.component';
+import { TailwindPageComponent } from '../tailwind-page/tailwind-page.component';
 
 const routes: Routes = [{ path: '', component: ExamplesComponent },
   { path: 'angularbasics', component: AngularBasicsComponent },
@@ -20,7 +21,8 @@ const routes: Routes = [{ path: '', component: ExamplesComponent },
   { path: 'angular-forms', component: AngularFormComponent },
   { path: 'angular-render-element', component: RenderElementComponent },
   { path: 'confetti', component: JsConfettiComponent },
-  { path: 'ckeditor', component: CkeditorComponent }
+  { path: 'ckeditor', component: CkeditorComponent },
+  { path: 'tailwind', component: TailwindPageComponent }
 ];
 
 @NgModule({

@@ -18,13 +18,15 @@
       <div class="col-sm-2">
         <h3>Examples</h3>
     </div>
-    <div *ngFor="let item of items" class="row">
+
+    <div class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400" class="cursor-pointer"  *ngFor="let item of items" class="row">
         <div class="col-4"> <h5>{{item.concept}}</h5></div>
         <div class="col-4"><h5>{{item.description}}</h5></div>
         <div (click)="changeRoute(item.route)" class="col-4"> <h5>{{item.example}}</h5></div>
     </div>
   
 
+  </div>
   </div>
   <hr>
 

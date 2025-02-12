@@ -14,6 +14,7 @@ import { RenderElementComponent } from '../render-element/render-element.compone
 import { JsConfettiComponent } from '../js-confetti/js-confetti.component';
 import { CkeditorComponent } from './ckeditor/ckeditor.component';
 import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
+import { TailwindPageComponent } from '../tailwind-page/tailwind-page.component';
 
 
 
@@ -30,7 +31,8 @@ import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
     AngularFormComponent,
     RenderElementComponent,
     JsConfettiComponent,
-    CkeditorComponent
+    CkeditorComponent,
+    TailwindPageComponent
   ],
   imports: [
     CommonModule,
